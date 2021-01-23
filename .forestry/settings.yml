@@ -4,6 +4,15 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: docs/kubernetes
+  label: Kubernetes
+  match: "**/*"
+- type: directory
+  path: ''
+  label: Kubernetes
+  create: all
+  match: docs/kubernetes/**/*
 - type: directory
   path: docs
   label: Docs
